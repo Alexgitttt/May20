@@ -1,0 +1,383 @@
+body {
+   background-color: #313338;
+   max-height: 750px;
+   font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
+
+
+#main-area {
+   display: grid;
+   grid-template-areas:
+      'sidebar1 sidebar2 main';
+   grid-template-columns: 70px 240px auto;
+   color: white;
+}
+
+.main-divs {
+   height: 600px;
+   box-sizing: border-box;
+}
+
+.discordImg-bckgrnd:first-child {
+   margin-top: 7px;
+}
+
+.main-divs hr {
+   width: 50%;
+   opacity: 0.5;
+   margin: 10px auto;
+}
+
+
+
+#sidebar1 {
+   background-color: #1e1f22;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   grid-area: sidebar1;
+}
+
+
+.discordImg-bckgrnd {
+   background-image: url('../img/discord-icon.png');
+   width: 45px;
+   height: 45px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   border-radius: 50px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 15%;
+}
+
+#sidebar2 {
+   background-color: #2b2d31;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   grid-area: sidebar2;
+}
+
+#sidebar2 header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 1.2em;
+   border-bottom: 1px solid #222428;
+   box-shadow: 0px 4px 12px -5px #99811A;
+}
+
+#sidebar2 header label {
+   padding: 15px 10px;
+   font-size: 0.8em;
+}
+
+#sidebar2 header i {
+   font-size: 1em;
+   width: 20px;
+   height: 20px;
+   color: white;
+   padding: 15px 10px;
+}
+
+.invite_people_block {
+   width: 100%;
+   height: 20%;
+   display: flex;
+   align-items: flex-end;
+   box-sizing: border-box;
+   padding-bottom: 20px;
+   border-bottom: 1px solid #222428;
+   box-shadow: 0px 4px 8px -5px #99811A;
+   margin-bottom: 10px;
+}
+
+.invite_people_block div {
+   width: 80%;
+   height: 35%;
+   margin: 0 auto;
+   background-color: #5865f2;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+}
+
+.invite_people_block div label {
+   margin: 0 auto;
+}
+
+
+.voice_channel {
+   width: 100%;
+   height: 30%;
+   padding-top: 5px;
+   padding-left: 5px;
+   box-sizing: border-box;
+   border-bottom: 1px solid #222428;
+   box-shadow: 0px 4px 8px -5px #99811A;
+}
+
+.voice_channel .peace {
+   margin-left: 12%;
+}
+
+.peace p {
+   margin: 0;
+   font-size: 0.8em;
+}
+
+.text_channels {
+   width: 100%;
+   padding-top: 5px;
+   height: 20%;
+   border-bottom: 1px solid #222428;
+   box-shadow: 0px 4px 8px -5px #99811A;
+   color: grey;
+}
+
+.text_channels div:first-child {
+   margin-left: 2%;
+}
+
+.text_channels div {
+   margin-left: 7%;
+   margin-top: 4%;
+}
+
+.voice_connection {
+   width: 100%;
+   border-bottom: 1px solid #222428;
+   box-shadow: 0px 4px 8px -5px #99811A;
+   padding: 10px 5px;
+   box-sizing: border-box;
+}
+
+.user {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid #222428;
+   /* box-shadow: 0px 4px 8px -5px #99811A; */
+}
+
+.user div:first-child {
+   display: flex;
+   align-items: center;
+}
+
+.user div:first-child i {
+   padding: 0 10px;
+}
+
+.user div:last-child {
+   padding-right: 10px;
+}
+
+.idMain-3-divs {
+   grid-area: main;
+   display: grid;
+   grid-template-rows: 51.5px auto;
+}
+
+#main-header {
+   border-bottom: 1px solid #222428;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-sizing: border-box;
+   padding: 5px;
+   background-color: #313338;
+}
+
+#main-header label {
+   padding: 0 0 0 15px;
+}
+
+.symbols {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 34%;
+   margin-right: 20px;
+}
+
+.grey-item {
+   color: grey;
+}
+
+.symbols input[type="text"] {
+   font-family: Helvetica, 'FontAwesome', sans-serif;
+   background: #eeeeee;
+   border: none;
+   border-radius: 3px;
+   padding: 3px;
+   color: #848c88;
+   background-color: #1e1f22;
+}
+
+#main-footer {
+   display: flex;
+   max-height: 550px;
+}
+
+.yesDaddy-inner {
+   box-sizing: border-box;
+}
+
+#main-chat-log {
+   width: 80%;
+   margin-left: 5px;
+   display: grid;
+   grid-template-rows: 90% auto;
+   background-color: #313338;
+}
+
+.inner-1 {
+   display: flex;
+   padding-top: 20px;
+   padding-left: 20px;
+}
+
+.inner-1 div:first-child {
+   background-image: url(../img/fish-smile.jpg);
+   background-repeat: no-repeat;
+   background-size: 130%;
+   background-position: 70% 20%;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+
+.inner-1 div:last-child {
+   padding-left: 18px;
+}
+
+.inner-1 div:last-child span {
+   padding-left: 10px;
+   color: grey;
+   font-size: 0.8em;
+}
+
+.backtnd-img {
+   background-image: url(../img/image.png);
+   width: 350px;
+   height: 500px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   border-radius: 5px;
+   margin: 15px 0 0 0;
+}
+
+.inner-2 footer {
+   border-radius: 5px;
+   padding: 5px;
+   background-color: #383a40;
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #b5bac1;
+}
+
+.inner-2 footer input {
+   background-color: transparent;
+   box-shadow: none;
+   border: none;
+}
+
+.inner-2 footer div:first-child {
+   width: 85%;
+}
+
+.inner-2 footer div:last-child i {
+   padding-right: 8px;
+}
+
+#main-contacts {
+   width: 20%;
+   background-color: #2b2d31;
+   box-sizing: border-box;
+   padding-left: 15px;
+   padding-top: 20px;
+   color: #828b9d;
+}
+
+.online-users div {
+   padding: 5px 0;
+   font-size: 1.2em;
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+}
+
+.online-users div i {
+   margin-right: 5px;
+   font-size: 2em;
+   color: #A48DD8;
+}
+
+.offline-users {
+   padding-top: 5%;
+}
+
+.offline-users div {
+   padding: 5px 0;
+   font-size: 1.2em;
+   display: flex;
+   align-items: center;
+}
+
+.online-offline {
+   color: #A48DD8;
+}
+
+.offline-users div i {
+   margin-right: 5px;
+   font-size: 2em;
+   color: grey;
+}
+
+
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1400px) {
+
+   #main-area {
+      max-width: 1400px;
+   }
+
+   .inner-2 footer div:first-child {
+      width: 60%;
+   }
+
+   #main-contacts {
+      width: 30%;
+   }
+
+   .symbols {
+      width: 45%;
+   }
+}
+
+
+@media only screen and (min-width: 680px) and (max-width: 1100px) {
+   #main-area {
+      max-width: 1100px;
+      grid-template-areas:
+         'sidebar1 sidebar2'
+         'main main';
+   }
+
+   .symbols {
+      width: 45%;
+   }
+}
